@@ -20,7 +20,7 @@ namespace Ticketautomat_ITU3
             return Ticketpreis;
 
         }
-        public string BeschreibungsAusgabe()
+        public string TicketBeschreibungsAusgabe()
         {
             return Beschreibung;
 

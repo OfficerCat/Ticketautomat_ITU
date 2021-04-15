@@ -65,10 +65,11 @@ namespace Ticketautomat_ITU3
             this.btnTicketanzeigen.TabIndex = 2;
             this.btnTicketanzeigen.Text = "Ticket anzeigen";
             this.btnTicketanzeigen.UseVisualStyleBackColor = true;
+            this.btnTicketanzeigen.Click += new System.EventHandler(this.btnTicketanzeigen_Click);
             // 
             // txtTicketpreis
             // 
-            this.txtTicketpreis.Location = new System.Drawing.Point(224, 63);
+            this.txtTicketpreis.Location = new System.Drawing.Point(293, 63);
             this.txtTicketpreis.Name = "txtTicketpreis";
             this.txtTicketpreis.Size = new System.Drawing.Size(148, 20);
             this.txtTicketpreis.TabIndex = 3;
@@ -76,7 +77,7 @@ namespace Ticketautomat_ITU3
             // lblticketpreis
             // 
             this.lblticketpreis.AutoSize = true;
-            this.lblticketpreis.Location = new System.Drawing.Point(224, 20);
+            this.lblticketpreis.Location = new System.Drawing.Point(290, 20);
             this.lblticketpreis.Name = "lblticketpreis";
             this.lblticketpreis.Size = new System.Drawing.Size(59, 13);
             this.lblticketpreis.TabIndex = 4;
@@ -87,7 +88,7 @@ namespace Ticketautomat_ITU3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 486);
+            this.ClientSize = new System.Drawing.Size(861, 454);
             this.Controls.Add(this.lblticketpreis);
             this.Controls.Add(this.txtTicketpreis);
             this.Controls.Add(this.btnTicketanzeigen);

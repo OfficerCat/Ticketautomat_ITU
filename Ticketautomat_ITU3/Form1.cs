@@ -32,5 +32,11 @@ namespace Ticketautomat_ITU3
         {
 
         }
+
+        private void btnTicketanzeigen_Click(object sender, EventArgs e)
+        {
+            //Auf der GUI die Ticketbezeichnung anzeigen.
+            txtTicketbezeichnung.Text = einTicket.TicketBeschreibungsAusgabe();
+        }
     }
 }
