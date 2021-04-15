@@ -12,6 +12,7 @@ namespace Ticketautomat_ITU3
 {
     public partial class Form1 : Form
     {
+        Ticketautomat einTicket = new Ticketautomat();
         public Form1()
         {
             InitializeComponent();

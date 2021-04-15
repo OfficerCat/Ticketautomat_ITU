@@ -50,7 +50,7 @@ namespace Ticketautomat_ITU3
             // txtTicketbezeichnung
             // 
             this.txtTicketbezeichnung.Location = new System.Drawing.Point(20, 63);
-            this.txtTicketbezeichnung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTicketbezeichnung.Margin = new System.Windows.Forms.Padding(2);
             this.txtTicketbezeichnung.Name = "txtTicketbezeichnung";
             this.txtTicketbezeichnung.Size = new System.Drawing.Size(199, 20);
             this.txtTicketbezeichnung.TabIndex = 1;
@@ -58,8 +58,8 @@ namespace Ticketautomat_ITU3
             // 
             // btnTicketanzeigen
             // 
-            this.btnTicketanzeigen.Location = new System.Drawing.Point(37, 112);
-            this.btnTicketanzeigen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTicketanzeigen.Location = new System.Drawing.Point(20, 110);
+            this.btnTicketanzeigen.Margin = new System.Windows.Forms.Padding(2);
             this.btnTicketanzeigen.Name = "btnTicketanzeigen";
             this.btnTicketanzeigen.Size = new System.Drawing.Size(137, 43);
             this.btnTicketanzeigen.TabIndex = 2;
@@ -93,7 +93,7 @@ namespace Ticketautomat_ITU3
             this.Controls.Add(this.btnTicketanzeigen);
             this.Controls.Add(this.txtTicketbezeichnung);
             this.Controls.Add(this.lblTicketbezeichnung);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
