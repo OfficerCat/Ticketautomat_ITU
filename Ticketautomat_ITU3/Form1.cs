@@ -37,6 +37,7 @@ namespace Ticketautomat_ITU3
         {
             //Auf der GUI die Ticketbezeichnung anzeigen.
             txtTicketbezeichnung.Text = einTicket.TicketBeschreibungsAusgabe();
+            txtTicketpreis.Text = einTicket.TicketpreisAusgeben().ToString();
         }
     }
 }
