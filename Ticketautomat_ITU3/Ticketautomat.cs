@@ -9,8 +9,8 @@ namespace Ticketautomat_ITU3
     class Ticketautomat
     {
         //Attribute
-        private double Ticketpreis;
-        private string Beschreibung;
+        private double Ticketpreis=2;
+        private string Beschreibung="Beschreibung";
         private int Ticketnummer;
         private double BezahlterBetrag;
 
