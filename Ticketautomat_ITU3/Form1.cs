@@ -45,7 +45,7 @@ namespace Ticketautomat_ITU3
         //10c
         private void btn10c_Click(object sender, EventArgs e)
         {
-            einTicket.EingabeGeld = einTicket.EingabeGeld +0.10;
+            einTicket.EingabeGeld = einTicket.EingabeGeld + 0.10m;
             einTicket.GeldeingabeBerechnung();
             txtRestlicherBetrag.Text = einTicket.GeldeingabeBerechnung().ToString();
         }

@@ -9,15 +9,15 @@ namespace Ticketautomat_ITU3
     class Ticketautomat
     {
         //Attribute
-        private double Ticketpreis=2;
+        private decimal Ticketpreis=2;
         private string Beschreibung="Beschreibung";
         private int Ticketnummer;
-        private double BezahlterBetrag;
+        private decimal BezahlterBetrag;
         private int Geldeingabe;
-        private double FehlenderBetrag;
-        public double EingabeGeld;
+        private decimal FehlenderBetrag;
+        public decimal EingabeGeld;
         //Methoden
-        public double TicketpreisAusgeben()
+        public decimal TicketpreisAusgeben()
         {
             return Ticketpreis;
 
@@ -31,7 +31,7 @@ namespace Ticketautomat_ITU3
         {
             return Ticketnummer;
         }
-        public double bezahlterbetragAusgabe()
+        public decimal bezahlterbetragAusgabe()
         {
             return BezahlterBetrag;
         }
@@ -40,11 +40,11 @@ namespace Ticketautomat_ITU3
             BezahlterBetrag += P_Bezahlbetrag;
             return;
         }
-        public double EingabegeldAusabe()
+        public decimal EingabegeldAusabe()
         {
             return EingabeGeld;
         }
-        public double GeldeingabeBerechnung()
+        public decimal GeldeingabeBerechnung()
         {
             FehlenderBetrag = Ticketpreis - EingabeGeld;
             return FehlenderBetrag;
