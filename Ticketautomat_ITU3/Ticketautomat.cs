@@ -13,7 +13,9 @@ namespace Ticketautomat_ITU3
         private string Beschreibung="Beschreibung";
         private int Ticketnummer;
         private double BezahlterBetrag;
-
+        private int Geldeingabe;
+        private double FehlenderBetrag;
+        public double EingabeGeld;
         //Methoden
         public double TicketpreisAusgeben()
         {
@@ -33,10 +35,19 @@ namespace Ticketautomat_ITU3
         {
             return BezahlterBetrag;
         }
-        public void EingabebezahlterBetrag(double P_Bezahlbetrag)
+        public void EingabebezahlterBetrag(int P_Bezahlbetrag)
         {
             BezahlterBetrag += P_Bezahlbetrag;
             return;
+        }
+        public double EingabegeldAusabe()
+        {
+            return EingabeGeld;
+        }
+        public double GeldeingabeBerechnung()
+        {
+            FehlenderBetrag = Ticketpreis - EingabeGeld;
+            return FehlenderBetrag;
         }
     }
 }

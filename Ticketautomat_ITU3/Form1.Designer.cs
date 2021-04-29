@@ -109,6 +109,7 @@ namespace Ticketautomat_ITU3
             this.btn10c.TabIndex = 5;
             this.btn10c.Text = "10 c";
             this.btn10c.UseVisualStyleBackColor = true;
+            this.btn10c.Click += new System.EventHandler(this.btn10c_Click);
             // 
             // btn20c
             // 

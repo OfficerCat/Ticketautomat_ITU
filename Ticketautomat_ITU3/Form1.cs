@@ -12,6 +12,8 @@ namespace Ticketautomat_ITU3
 {
     public partial class Form1 : Form
     {
+        //veriablen
+        
         Ticketautomat einTicket = new Ticketautomat();
         public Form1()
         {
@@ -39,6 +41,13 @@ namespace Ticketautomat_ITU3
             txtTicketbezeichnung.Text = einTicket.TicketBeschreibungsAusgabe();
             txtTicketpreis.Text = einTicket.TicketpreisAusgeben().ToString();
 
+        }
+        //10c
+        private void btn10c_Click(object sender, EventArgs e)
+        {
+            einTicket.EingabeGeld = einTicket.EingabeGeld +0.10;
+            einTicket.GeldeingabeBerechnung();
+            txtRestlicherBetrag.Text = einTicket.GeldeingabeBerechnung().ToString();
         }
     }
 }
