@@ -15,6 +15,7 @@ namespace Ticketautomat_ITU3
         //veriablen
         
         Ticketautomat einTicket = new Ticketautomat();
+        Tickets ticket = new Tickets();
         public Form1()
         {
             InitializeComponent();
@@ -37,9 +38,6 @@ namespace Ticketautomat_ITU3
 
         private void btnTicketanzeigen_Click(object sender, EventArgs e)
         {
-            //Show ticketdescription
-            txtTicketbezeichnung.Text = einTicket.TicketBeschreibungsAusgabe();
-            txtTicketpreis.Text = einTicket.TicketpreisAusgeben().ToString();
 
         }
         //adds 10c as payed money.
@@ -122,6 +120,20 @@ namespace Ticketautomat_ITU3
         private void btnAbbruch_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void btnTicket1_Click(object sender, EventArgs e)
+        {
+            ticket.Ticket1();
+            //Show ticketdescription
+            txtTicketbezeichnung.Text = einTicket.TicketBeschreibungsAusgabe();
+            txtTicketpreis.Text = einTicket.TicketpreisAusgeben().ToString();
+
+        }
+
+        private void btnTicket2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
