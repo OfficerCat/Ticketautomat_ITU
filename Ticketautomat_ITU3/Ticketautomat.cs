@@ -11,11 +11,9 @@ namespace Ticketautomat_ITU3
         //Attribute
         private decimal Ticketpreis=2;
         private string Beschreibung="Beschreibung";
-        private int Ticketnummer;
         private decimal BezahlterBetrag;
-        private int Geldeingabe;
         private decimal FehlenderBetrag;
-        //its alot simpler to add something to a public variable
+        //it's alot simpler to add something to a public variable
         public decimal EingabeGeld;
         //if statement does not like Methodes so i use a public variable
         public bool GenugGezahlt = false;
@@ -23,16 +21,10 @@ namespace Ticketautomat_ITU3
         public decimal TicketpreisAusgeben()
         {
             return Ticketpreis;
-
         }
         public string TicketBeschreibungsAusgabe()
         {
             return Beschreibung;
-
-        }
-        public int Ticketnummerausgabe()
-        {
-            return Ticketnummer;
         }
         public decimal bezahlterbetragAusgabe()
         {
@@ -47,6 +39,7 @@ namespace Ticketautomat_ITU3
         {
             return EingabeGeld;
         }
+        //Calculates the amount left to print a ticket
         public decimal GeldeingabeBerechnung()
         {
             FehlenderBetrag = Ticketpreis - EingabeGeld;
@@ -59,6 +52,12 @@ namespace Ticketautomat_ITU3
                 GenugGezahlt = false;
             }
             return FehlenderBetrag;
+        }
+        //Resets the whole Programm, back to normal
+        public void Reset()
+        {
+            Beschreibung = "Bitte Ticket auswählen";
+            Ticketpreis = 0m;
         }
     }
 }

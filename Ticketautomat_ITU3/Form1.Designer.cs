@@ -121,6 +121,7 @@ namespace Ticketautomat_ITU3
             this.btn20c.TabIndex = 6;
             this.btn20c.Text = "20 c";
             this.btn20c.UseVisualStyleBackColor = true;
+            this.btn20c.Click += new System.EventHandler(this.btn20c_Click);
             // 
             // btn50c
             // 
@@ -130,6 +131,7 @@ namespace Ticketautomat_ITU3
             this.btn50c.TabIndex = 7;
             this.btn50c.Text = "50 c";
             this.btn50c.UseVisualStyleBackColor = true;
+            this.btn50c.Click += new System.EventHandler(this.btn50c_Click);
             // 
             // btn1E
             // 
@@ -139,6 +141,7 @@ namespace Ticketautomat_ITU3
             this.btn1E.TabIndex = 8;
             this.btn1E.Text = "1 €";
             this.btn1E.UseVisualStyleBackColor = true;
+            this.btn1E.Click += new System.EventHandler(this.btn1E_Click);
             // 
             // btn2E
             // 
@@ -148,6 +151,7 @@ namespace Ticketautomat_ITU3
             this.btn2E.TabIndex = 9;
             this.btn2E.Text = "2 €";
             this.btn2E.UseVisualStyleBackColor = true;
+            this.btn2E.Click += new System.EventHandler(this.btn2E_Click);
             // 
             // btn5E
             // 
@@ -157,6 +161,7 @@ namespace Ticketautomat_ITU3
             this.btn5E.TabIndex = 10;
             this.btn5E.Text = "5 €";
             this.btn5E.UseVisualStyleBackColor = true;
+            this.btn5E.Click += new System.EventHandler(this.btn5E_Click);
             // 
             // btn10E
             // 
@@ -166,6 +171,7 @@ namespace Ticketautomat_ITU3
             this.btn10E.TabIndex = 11;
             this.btn10E.Text = "10 €";
             this.btn10E.UseVisualStyleBackColor = true;
+            this.btn10E.Click += new System.EventHandler(this.btn10E_Click);
             // 
             // btn20E
             // 
@@ -175,6 +181,7 @@ namespace Ticketautomat_ITU3
             this.btn20E.TabIndex = 12;
             this.btn20E.Text = "20 €";
             this.btn20E.UseVisualStyleBackColor = true;
+            this.btn20E.Click += new System.EventHandler(this.btn20E_Click);
             // 
             // txtRestlicherBetrag
             // 
@@ -202,6 +209,7 @@ namespace Ticketautomat_ITU3
             this.btnAbbruch.TabIndex = 15;
             this.btnAbbruch.Text = "Vorgang Abbrechen";
             this.btnAbbruch.UseVisualStyleBackColor = true;
+            this.btnAbbruch.Click += new System.EventHandler(this.btnAbbruch_Click);
             // 
             // txtEingeworfenesGeld
             // 
