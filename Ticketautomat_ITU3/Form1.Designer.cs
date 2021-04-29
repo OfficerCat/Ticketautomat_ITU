@@ -219,7 +219,7 @@ namespace Ticketautomat_ITU3
             // 
             // txtRückgeld
             // 
-            this.txtRückgeld.Location = new System.Drawing.Point(293, 285);
+            this.txtRückgeld.Location = new System.Drawing.Point(289, 285);
             this.txtRückgeld.Name = "txtRückgeld";
             this.txtRückgeld.Size = new System.Drawing.Size(54, 20);
             this.txtRückgeld.TabIndex = 18;
