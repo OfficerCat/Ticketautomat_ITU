@@ -48,6 +48,16 @@ namespace Ticketautomat_ITU3
             einTicket.EingabeGeld = einTicket.EingabeGeld + 0.10m;
             einTicket.GeldeingabeBerechnung();
             txtRestlicherBetrag.Text = einTicket.GeldeingabeBerechnung().ToString();
+            if  (einTicket.GenugGezahlt == true)
+            {
+                lblNichtGenug.Visible = false;
+                lblTicketDrucken.Visible = true;
+            }
+            else
+            {
+                lblNichtGenug.Visible = true;
+                lblTicketDrucken.Visible = false;
+            }
         }
     }
 }

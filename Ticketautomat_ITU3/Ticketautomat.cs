@@ -15,7 +15,10 @@ namespace Ticketautomat_ITU3
         private decimal BezahlterBetrag;
         private int Geldeingabe;
         private decimal FehlenderBetrag;
+        //its alot simpler to add something to a public variable
         public decimal EingabeGeld;
+        //if statement does not like Methodes so i use a public variable
+        public bool GenugGezahlt = false;
         //Methoden
         public decimal TicketpreisAusgeben()
         {
@@ -47,6 +50,14 @@ namespace Ticketautomat_ITU3
         public decimal GeldeingabeBerechnung()
         {
             FehlenderBetrag = Ticketpreis - EingabeGeld;
+            if (EingabeGeld >= Ticketpreis)
+            {
+                GenugGezahlt = true;
+            }
+            else
+            {
+                GenugGezahlt = false;
+            }
             return FehlenderBetrag;
         }
     }

@@ -49,12 +49,14 @@ namespace Ticketautomat_ITU3
             this.lblEingeworfenesGeld = new System.Windows.Forms.Label();
             this.txtRückgeld = new System.Windows.Forms.TextBox();
             this.lblRückgeld = new System.Windows.Forms.Label();
+            this.lblTicketDrucken = new System.Windows.Forms.Label();
+            this.lblNichtGenug = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTicketbezeichnung
             // 
             this.lblTicketbezeichnung.AutoSize = true;
-            this.lblTicketbezeichnung.Location = new System.Drawing.Point(17, 47);
+            this.lblTicketbezeichnung.Location = new System.Drawing.Point(17, 48);
             this.lblTicketbezeichnung.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTicketbezeichnung.Name = "lblTicketbezeichnung";
             this.lblTicketbezeichnung.Size = new System.Drawing.Size(98, 13);
@@ -74,7 +76,7 @@ namespace Ticketautomat_ITU3
             // 
             // btnTicketanzeigen
             // 
-            this.btnTicketanzeigen.Location = new System.Drawing.Point(20, 322);
+            this.btnTicketanzeigen.Location = new System.Drawing.Point(20, 399);
             this.btnTicketanzeigen.Margin = new System.Windows.Forms.Padding(2);
             this.btnTicketanzeigen.Name = "btnTicketanzeigen";
             this.btnTicketanzeigen.Size = new System.Drawing.Size(137, 43);
@@ -86,7 +88,7 @@ namespace Ticketautomat_ITU3
             // txtTicketpreis
             // 
             this.txtTicketpreis.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTicketpreis.Location = new System.Drawing.Point(293, 63);
+            this.txtTicketpreis.Location = new System.Drawing.Point(422, 63);
             this.txtTicketpreis.Name = "txtTicketpreis";
             this.txtTicketpreis.Size = new System.Drawing.Size(186, 26);
             this.txtTicketpreis.TabIndex = 3;
@@ -94,7 +96,7 @@ namespace Ticketautomat_ITU3
             // lblticketpreis
             // 
             this.lblticketpreis.AutoSize = true;
-            this.lblticketpreis.Location = new System.Drawing.Point(290, 47);
+            this.lblticketpreis.Location = new System.Drawing.Point(419, 47);
             this.lblticketpreis.Name = "lblticketpreis";
             this.lblticketpreis.Size = new System.Drawing.Size(59, 13);
             this.lblticketpreis.TabIndex = 4;
@@ -103,7 +105,7 @@ namespace Ticketautomat_ITU3
             // 
             // btn10c
             // 
-            this.btn10c.Location = new System.Drawing.Point(293, 157);
+            this.btn10c.Location = new System.Drawing.Point(422, 157);
             this.btn10c.Name = "btn10c";
             this.btn10c.Size = new System.Drawing.Size(42, 43);
             this.btn10c.TabIndex = 5;
@@ -113,7 +115,7 @@ namespace Ticketautomat_ITU3
             // 
             // btn20c
             // 
-            this.btn20c.Location = new System.Drawing.Point(341, 157);
+            this.btn20c.Location = new System.Drawing.Point(470, 157);
             this.btn20c.Name = "btn20c";
             this.btn20c.Size = new System.Drawing.Size(42, 43);
             this.btn20c.TabIndex = 6;
@@ -122,7 +124,7 @@ namespace Ticketautomat_ITU3
             // 
             // btn50c
             // 
-            this.btn50c.Location = new System.Drawing.Point(389, 157);
+            this.btn50c.Location = new System.Drawing.Point(518, 157);
             this.btn50c.Name = "btn50c";
             this.btn50c.Size = new System.Drawing.Size(42, 43);
             this.btn50c.TabIndex = 7;
@@ -131,7 +133,7 @@ namespace Ticketautomat_ITU3
             // 
             // btn1E
             // 
-            this.btn1E.Location = new System.Drawing.Point(437, 157);
+            this.btn1E.Location = new System.Drawing.Point(566, 157);
             this.btn1E.Name = "btn1E";
             this.btn1E.Size = new System.Drawing.Size(42, 43);
             this.btn1E.TabIndex = 8;
@@ -140,7 +142,7 @@ namespace Ticketautomat_ITU3
             // 
             // btn2E
             // 
-            this.btn2E.Location = new System.Drawing.Point(293, 206);
+            this.btn2E.Location = new System.Drawing.Point(422, 206);
             this.btn2E.Name = "btn2E";
             this.btn2E.Size = new System.Drawing.Size(42, 43);
             this.btn2E.TabIndex = 9;
@@ -149,7 +151,7 @@ namespace Ticketautomat_ITU3
             // 
             // btn5E
             // 
-            this.btn5E.Location = new System.Drawing.Point(341, 206);
+            this.btn5E.Location = new System.Drawing.Point(470, 206);
             this.btn5E.Name = "btn5E";
             this.btn5E.Size = new System.Drawing.Size(42, 43);
             this.btn5E.TabIndex = 10;
@@ -158,7 +160,7 @@ namespace Ticketautomat_ITU3
             // 
             // btn10E
             // 
-            this.btn10E.Location = new System.Drawing.Point(389, 206);
+            this.btn10E.Location = new System.Drawing.Point(518, 206);
             this.btn10E.Name = "btn10E";
             this.btn10E.Size = new System.Drawing.Size(42, 43);
             this.btn10E.TabIndex = 11;
@@ -167,7 +169,7 @@ namespace Ticketautomat_ITU3
             // 
             // btn20E
             // 
-            this.btn20E.Location = new System.Drawing.Point(437, 206);
+            this.btn20E.Location = new System.Drawing.Point(566, 206);
             this.btn20E.Name = "btn20E";
             this.btn20E.Size = new System.Drawing.Size(42, 43);
             this.btn20E.TabIndex = 12;
@@ -177,7 +179,7 @@ namespace Ticketautomat_ITU3
             // txtRestlicherBetrag
             // 
             this.txtRestlicherBetrag.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRestlicherBetrag.Location = new System.Drawing.Point(293, 110);
+            this.txtRestlicherBetrag.Location = new System.Drawing.Point(422, 110);
             this.txtRestlicherBetrag.Name = "txtRestlicherBetrag";
             this.txtRestlicherBetrag.Size = new System.Drawing.Size(186, 26);
             this.txtRestlicherBetrag.TabIndex = 13;
@@ -185,7 +187,7 @@ namespace Ticketautomat_ITU3
             // lblrestlicherbetrag
             // 
             this.lblrestlicherbetrag.AutoSize = true;
-            this.lblrestlicherbetrag.Location = new System.Drawing.Point(290, 94);
+            this.lblrestlicherbetrag.Location = new System.Drawing.Point(419, 94);
             this.lblrestlicherbetrag.Name = "lblrestlicherbetrag";
             this.lblrestlicherbetrag.Size = new System.Drawing.Size(88, 13);
             this.lblrestlicherbetrag.TabIndex = 14;
@@ -193,7 +195,7 @@ namespace Ticketautomat_ITU3
             // 
             // btnAbbruch
             // 
-            this.btnAbbruch.Location = new System.Drawing.Point(388, 322);
+            this.btnAbbruch.Location = new System.Drawing.Point(518, 399);
             this.btnAbbruch.Margin = new System.Windows.Forms.Padding(2);
             this.btnAbbruch.Name = "btnAbbruch";
             this.btnAbbruch.Size = new System.Drawing.Size(137, 43);
@@ -204,7 +206,7 @@ namespace Ticketautomat_ITU3
             // txtEingeworfenesGeld
             // 
             this.txtEingeworfenesGeld.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEingeworfenesGeld.Location = new System.Drawing.Point(20, 110);
+            this.txtEingeworfenesGeld.Location = new System.Drawing.Point(20, 111);
             this.txtEingeworfenesGeld.Name = "txtEingeworfenesGeld";
             this.txtEingeworfenesGeld.Size = new System.Drawing.Size(193, 26);
             this.txtEingeworfenesGeld.TabIndex = 16;
@@ -212,7 +214,7 @@ namespace Ticketautomat_ITU3
             // lblEingeworfenesGeld
             // 
             this.lblEingeworfenesGeld.AutoSize = true;
-            this.lblEingeworfenesGeld.Location = new System.Drawing.Point(17, 94);
+            this.lblEingeworfenesGeld.Location = new System.Drawing.Point(17, 95);
             this.lblEingeworfenesGeld.Name = "lblEingeworfenesGeld";
             this.lblEingeworfenesGeld.Size = new System.Drawing.Size(102, 13);
             this.lblEingeworfenesGeld.TabIndex = 17;
@@ -220,7 +222,7 @@ namespace Ticketautomat_ITU3
             // 
             // txtRückgeld
             // 
-            this.txtRückgeld.Location = new System.Drawing.Point(289, 285);
+            this.txtRückgeld.Location = new System.Drawing.Point(418, 285);
             this.txtRückgeld.Name = "txtRückgeld";
             this.txtRückgeld.Size = new System.Drawing.Size(54, 20);
             this.txtRückgeld.TabIndex = 18;
@@ -228,17 +230,42 @@ namespace Ticketautomat_ITU3
             // lblRückgeld
             // 
             this.lblRückgeld.AutoSize = true;
-            this.lblRückgeld.Location = new System.Drawing.Point(290, 269);
+            this.lblRückgeld.Location = new System.Drawing.Point(419, 269);
             this.lblRückgeld.Name = "lblRückgeld";
             this.lblRückgeld.Size = new System.Drawing.Size(53, 13);
             this.lblRückgeld.TabIndex = 19;
             this.lblRückgeld.Text = "Rückgeld";
             // 
+            // lblTicketDrucken
+            // 
+            this.lblTicketDrucken.AutoSize = true;
+            this.lblTicketDrucken.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblTicketDrucken.Font = new System.Drawing.Font("Bernard MT Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTicketDrucken.Location = new System.Drawing.Point(12, 285);
+            this.lblTicketDrucken.Name = "lblTicketDrucken";
+            this.lblTicketDrucken.Size = new System.Drawing.Size(235, 31);
+            this.lblTicketDrucken.TabIndex = 20;
+            this.lblTicketDrucken.Text = "Ticket wird gedruckt ";
+            this.lblTicketDrucken.Visible = false;
+            // 
+            // lblNichtGenug
+            // 
+            this.lblNichtGenug.AutoSize = true;
+            this.lblNichtGenug.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblNichtGenug.Font = new System.Drawing.Font("Bernard MT Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNichtGenug.Location = new System.Drawing.Point(12, 285);
+            this.lblNichtGenug.Name = "lblNichtGenug";
+            this.lblNichtGenug.Size = new System.Drawing.Size(320, 31);
+            this.lblNichtGenug.TabIndex = 21;
+            this.lblNichtGenug.Text = "Nicht genug Geld eingeworfen";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 376);
+            this.ClientSize = new System.Drawing.Size(666, 453);
+            this.Controls.Add(this.lblNichtGenug);
+            this.Controls.Add(this.lblTicketDrucken);
             this.Controls.Add(this.lblRückgeld);
             this.Controls.Add(this.txtRückgeld);
             this.Controls.Add(this.lblEingeworfenesGeld);
@@ -289,6 +316,8 @@ namespace Ticketautomat_ITU3
         private System.Windows.Forms.Label lblEingeworfenesGeld;
         private System.Windows.Forms.TextBox txtRückgeld;
         private System.Windows.Forms.Label lblRückgeld;
+        private System.Windows.Forms.Label lblTicketDrucken;
+        private System.Windows.Forms.Label lblNichtGenug;
     }
 }
 
