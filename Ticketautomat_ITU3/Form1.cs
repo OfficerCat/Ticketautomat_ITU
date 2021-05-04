@@ -43,7 +43,7 @@ namespace Ticketautomat_ITU3
         //adds 10c as payed money.
         private void btn10c_Click(object sender, EventArgs e)
         {
-            einTicket.EingabeGeld = einTicket.EingabeGeld + 0.10m;
+            einTicket.EingabeGeld += 0.10m;
             einTicket.GeldeingabeBerechnung();
             txtRestlicherBetrag.Text = einTicket.GeldeingabeBerechnung().ToString();
             if  (einTicket.GenugGezahlt == true)
@@ -91,10 +91,22 @@ namespace Ticketautomat_ITU3
                 lblTicketDrucken.Visible = false;
             }
         }
-
+        //adds 1€ as payed money.
         private void btn1E_Click(object sender, EventArgs e)
         {
-
+            einTicket.EingabeGeld = einTicket.EingabeGeld + 1.00m;
+            einTicket.GeldeingabeBerechnung();
+            txtRestlicherBetrag.Text = einTicket.GeldeingabeBerechnung().ToString();
+            if (einTicket.GenugGezahlt == true)
+            {
+                lblNichtGenug.Visible = false;
+                lblTicketDrucken.Visible = true;
+            }
+            else
+            {
+                lblNichtGenug.Visible = true;
+                lblTicketDrucken.Visible = false;
+            }
         }
 
         private void btn2E_Click(object sender, EventArgs e)

@@ -10,7 +10,7 @@ namespace Ticketautomat_ITU3
     {
         //Attribute
         public static decimal Ticketpreis = 0;      
-        public static string Beschreibung= "";
+        public static string Beschreibung= "Bitte Ticket auswählen";
         private decimal BezahlterBetrag;
         private decimal FehlenderBetrag;
         //it's alot simpler to add something to a public variable
